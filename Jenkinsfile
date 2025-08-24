@@ -9,13 +9,13 @@ pipeline {
         PROJECT = "roboshop"
         COMPONENT = "catalogue"
     }
-    options {
+    /* options {
         timeout(time: 30, unit: 'MINUTES') 
         disableConcurrentBuilds()
     }
     parameters {
         booleanParam(name: 'deploy', defaultValue: false, description: 'Toggle this value')
-    }
+    } */
     // Build
     stages {
         stage('Read package.json') {
