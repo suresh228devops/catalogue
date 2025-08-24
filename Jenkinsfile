@@ -8,6 +8,7 @@ pipeline {
         ACC_ID = "127492125014"
         PROJECT = "roboshop"
         COMPONENT = "catalogue"
+        
     }
     /* options {
         timeout(time: 30, unit: 'MINUTES') 
