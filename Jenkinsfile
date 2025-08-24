@@ -161,9 +161,9 @@ pipeline {
                     wait: false // VPC will not wait for SG pipeline completion
                 }
             }
-        }
+        } */
         
-    } */
+    } 
 
     post { 
         always { 
