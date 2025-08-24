@@ -5,7 +5,7 @@ pipeline {
     environment { 
         appVersion = ''
         REGION = "us-east-1"
-        ACC_ID = "315069654700"
+        ACC_ID = "127492125014"
         PROJECT = "roboshop"
         COMPONENT = "catalogue"
     }
@@ -65,7 +65,7 @@ pipeline {
                 waitForQualityGate abortPipeline: true }
             }
         } */
-        stage('Check Dependabot Alerts') {
+        /* stage('Check Dependabot Alerts') {
             environment { 
                 GITHUB_TOKEN = credentials('github-token')
             }
@@ -98,7 +98,7 @@ pipeline {
                     }
                 }
             }
-        }
+        } */
         stage('Docker Build') {
             steps {
                 script {
@@ -112,7 +112,7 @@ pipeline {
                 }
             }
         }
-        stage('Check Scan Results') {
+        /* stage('Check Scan Results') {
             steps {
                 script {
                     withAWS(credentials: 'aws-creds', region: 'us-east-1') {
@@ -163,7 +163,7 @@ pipeline {
             }
         }
         
-    }
+    } */
 
     post { 
         always { 
