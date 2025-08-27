@@ -46,7 +46,7 @@ pipeline {
                 }
             }
         }
-        /* stage('Sonar Scan') {
+        stage('Sonar Scan') {
             environment {
                 scannerHome = tool 'sonar-7.2'
             }
@@ -58,7 +58,7 @@ pipeline {
                    }
                 }
             }
-        } */
+        }
         // Enable webhook in sonarqube server and wait for results
         /* stage("Quality Gate") {
             steps {
