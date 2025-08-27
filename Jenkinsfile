@@ -114,7 +114,7 @@ pipeline {
             }
         }
 
-        stage('Trigger Deploy') {
+        /* stage('Trigger Deploy') {
             when{
                 expression { params.deploy }
             }
@@ -130,7 +130,7 @@ pipeline {
                     }
                 }
             }
-        }
+        } */
 
         /* stage('Check Scan Results') {
             steps {
@@ -165,7 +165,7 @@ pipeline {
                     }
                 }
             }
-        }
+        } */
         stage('Trigger Deploy') {
             when{
                 expression { params.deploy }
@@ -181,7 +181,7 @@ pipeline {
                     wait: false // VPC will not wait for SG pipeline completion
                 }
             }
-        } */
+        }
         
     } 
 
